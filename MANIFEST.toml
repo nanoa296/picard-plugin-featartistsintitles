@@ -1,0 +1,6 @@
+uuid = "4ee02844-c36a-4a3b-a3cc-8c748589ddfc"
+name = "Feat. Artists in Titles"
+description = "Move feat. and featuring credits from artist names to album and track titles."
+api = ["3.0"]
+authors = ["Lukas Lalinsky", "Michael Wiencek", "Bryan Toth", "JeromyNix (NobahdiAtoll)"]
+categories = ["metadata"]
