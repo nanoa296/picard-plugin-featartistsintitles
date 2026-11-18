@@ -4,3 +4,6 @@ description = "Move feat. and featuring credits from artist names to album and t
 api = ["3.0"]
 authors = ["Lukas Lalinsky", "Michael Wiencek", "Bryan Toth", "JeromyNix (NobahdiAtoll)"]
 categories = ["metadata"]
+maintainers = ["nanoa296"]
+homepage = "https://github.com/nanoa296/picard-plugin-featartistsintitles"
+report_bugs_to = "https://github.com/nanoa296/picard-plugin-featartistsintitles/issues"

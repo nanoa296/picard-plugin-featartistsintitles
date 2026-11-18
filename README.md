@@ -13,17 +13,15 @@ Also removes the featured suffix from `artistsort` and `albumartistsort`.
 
 ## Install
 
-The supplied directory is already a local Git repository with a committed v1.0.0 tag.
-If using the ZIP, extract it first; the ZIP includes the hidden `.git` directory.
-Keep the extracted directory if you want to reinstall or update from it later.
-
 1. Open Picard 3's Options/Preferences → Plugins → Install Plugin….
-2. Select the local repository tab.
-3. Browse to the extracted `picard-plugin-featartistsintitles` folder (the folder containing MANIFEST.toml), not an individual Python file or the ZIP.
-4. Select version `v1.0.0` if prompted, and install. New installations are enabled automatically.
-5. Load or refresh a MusicBrainz release to run the plugin. Inspect the proposed metadata, then Save when satisfied.
+2. Select the URL tab and enter `https://github.com/nanoa296/picard-plugin-featartistsintitles`.
+3. Select version `v1.0.1` and install. New installations are enabled automatically.
+4. Load or refresh a MusicBrainz release, inspect the proposed metadata, then Save.
 
-This processes metadata loaded from MusicBrainz, like the original plugin; merely opening an unmatched local file does not run it. No audio files have been modified during development.
+For development, clone this repository and select its directory in the local repository tab instead.
+A GitHub source ZIP alone is not a Git repository; use the repository URL or a Git clone.
+
+This processes metadata loaded from MusicBrainz, like the original plugin; merely opening an unmatched local file does not run it.
 
 ## Compatibility and changes
 
@@ -39,7 +37,7 @@ It expects unparenthesized artist credits such as `Main feat. Guest`; it does no
 
 Eight unit tests pass, including callback registration with simulated API injection. The manifest was validated with Picard's own standalone validator. Callback signatures and registration were checked against upstream Picard source commit `7b6587886b8d84e3e79c0e77b72667eb755b6a82`.
 
-This has not been tested in the running Picard GUI or against audio files.
+The maintainer reports successful testing in the latest Picard release available on November 18, 2026. The exact Picard version was not recorded.
 
 Run tests from this folder with:
 
