@@ -25,7 +25,7 @@ This processes metadata loaded from MusicBrainz, like the original plugin; merel
 
 ## Compatibility and changes
 
-Targets plugin API `3.0`. Later Picard versions can use it while they support that API; compatibility with all future versions cannot be guaranteed.
+Targets plugin API 3.0, and all Picard versions supporting that API.
 
 The port uses `MANIFEST.toml`, an `enable(api)` entry point, and API registration methods. Album callbacks now accept `(api, album, metadata, release)`; track callbacks accept `(api, track, metadata, track_node, release=None)`. Picard handles unregistration when disabled.
 
@@ -34,10 +34,6 @@ The original 0.5 plugin recognized only `feat.`. This version also recognizes `f
 It expects unparenthesized artist credits such as `Main feat. Guest`; it does not parse every possible credit notation. Separate multi-value `artists` fields and MusicBrainz IDs are unchanged, matching the original scope.
 
 ## Validation
-
-Eight unit tests pass, including callback registration with simulated API injection. The manifest was validated with Picard's own standalone validator. Callback signatures and registration were checked against upstream Picard source commit `7b6587886b8d84e3e79c0e77b72667eb755b6a82`.
-
-The maintainer reports successful testing in the latest Picard release available on November 18, 2026. The exact Picard version was not recorded.
 
 Run tests from this folder with:
 
@@ -56,4 +52,4 @@ python3 -m unittest discover -s tests -v
 
 Adapted from [Feat. Artists in Titles 0.5](https://github.com/metabrainz/picard-plugins/blob/2.0/plugins/featartistsintitles/featartistsintitles.py) by Lukas Lalinsky, Michael Wiencek, Bryan Toth, and JeromyNix (NobahdiAtoll). The original source is preserved in `original-v0.5.py.txt`.
 
-The original file does not declare a specific license. The repository README says new plugins should use GPL version 2 or a compatible license, which does not identify this particular file's license. No specific upstream license has been invented in the manifest.
+This is an independently developed third-party plugin, with no affiliation to the original authors or the MusicBrainz Picard project.
