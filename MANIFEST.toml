@@ -7,3 +7,5 @@ categories = ["metadata"]
 maintainers = ["nanoa296"]
 homepage = "https://github.com/nanoa296/picard-plugin-featartistsintitles"
 report_bugs_to = "https://github.com/nanoa296/picard-plugin-featartistsintitles/issues"
+license = "MIT"
+license_url = "https://github.com/nanoa296/picard-plugin-featartistsintitles/blob/main/LICENSE"

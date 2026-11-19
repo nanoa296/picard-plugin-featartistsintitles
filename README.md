@@ -53,3 +53,7 @@ python3 -m unittest discover -s tests -v
 Adapted from [Feat. Artists in Titles 0.5](https://github.com/metabrainz/picard-plugins/blob/2.0/plugins/featartistsintitles/featartistsintitles.py) by Lukas Lalinsky, Michael Wiencek, Bryan Toth, and JeromyNix (NobahdiAtoll). The original source is preserved in `original-v0.5.py.txt`.
 
 This is an independently developed third-party plugin, with no affiliation to the original authors or the MusicBrainz Picard project.
+
+## License
+
+[MIT](LICENSE) © 2026 nanoa296.
